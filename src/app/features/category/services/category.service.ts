@@ -17,7 +17,8 @@ export class CategoryService {
 
   getCategoryList(): Observable<void> {
     // Add your implementation here
-    return this.http.get<void>('https://jsonplaceholder.typicode.com/todos');
+    // return this.http.get<void>('https://jsonplaceholder.typicode.com/todos');
+  return this.http.get<void>('https://localhost:44383/api/categories');
   }
 
 }
